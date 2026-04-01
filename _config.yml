@@ -1,7 +1,6 @@
 title: My Work Blog
 description: Notes on AI-assisted development — workflows, failure modes, and what actually works.
 theme: minima
-remote_theme: jekyll/minima
 
 permalink: /:year/:month/:day/:title/
 
