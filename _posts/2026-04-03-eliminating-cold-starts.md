@@ -3,7 +3,7 @@ title: "Eliminating Cold Starts"
 date: 2026-04-03
 ---
 
-The internal post-mortem automation eventually worked but that wasn't the problem I'd been trying to solve. Customer-facing post-mortems were a different kind of challenge. When an incident happened, we owed our customers a written explanation — what broke, why, and what we'd done to prevent it. We needed to convey what we had learnt from the post-mortem and how we planned to evolve our product and our processes. The language had to be precise yet readable. More importantly, we wanted them to trust that they were in good hands.
+The internal post-mortem automation eventually worked but that wasn't the problem I'd been trying to solve. Customer-facing post-mortems were a different kind of challenge. When an incident happened, we owed our customers a written explanation — what broke, why, and what we'd done to prevent it. We needed to convey what we had learnt from the post-mortem and how we planned to evolve our product and our processes. The language had to be precise yet readable. More importantly, we wanted customers to trust that they were in good hands even after we made mistakes.
 
 ## A simpler problem
 
