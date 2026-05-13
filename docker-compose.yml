@@ -1,0 +1,22 @@
+services:
+  jekyll:
+    image: bretfisher/jekyll-serve
+    command: jekyll serve --drafts -H 0.0.0.0 -P 4000
+    volumes:
+      - .:/site
+    networks:
+      - internal
+    restart: unless-stopped
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate --url http://jekyll:4000
+    networks:
+      - internal
+    depends_on:
+      - jekyll
+    restart: unless-stopped
+
+networks:
+  internal:
+    driver: bridge
