@@ -4,6 +4,8 @@ services:
     command: jekyll serve --drafts -H 0.0.0.0 -P 4000
     volumes:
       - .:/site
+    ports:
+      - "${TAILSCALE_IP}:4000:4000"
     networks:
       - internal
     restart: unless-stopped
@@ -11,6 +13,8 @@ services:
   cloudflared:
     image: cloudflare/cloudflared:latest
     command: tunnel --no-autoupdate --url http://jekyll:4000
+    profiles:
+      - public
     networks:
       - internal
     depends_on:
