@@ -1,8 +1,21 @@
+# Local-only — never commit
 drafts/
+_drafts/
+_drafts_backup/
+_context/
+.env
+
+# Working files
+cleanup-response.md
+session-handoff.md
+pdf-preview.sh
+.codex
+
+# Jekyll build output
 _site/
 .jekyll-cache/
 .sass-cache/
 Gemfile.lock
-_drafts/
+
+# Claude Code
 .claude/prompts/
-.env
